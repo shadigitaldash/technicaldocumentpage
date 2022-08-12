@@ -1,0 +1,39 @@
+
+  #navbar {
+    width: 45%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+    body {
+      background-image: url(https://cdn2.photostockeditor.com/t/2512/white-assorted-color-coloring-pencils-art-art-image.jpg);
+      
+    }
+  
+  
+  .main-section {
+    font-family: 'Spectral', serif;
+    font-weight: bold;
+  }
+  
+  header {
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    text-decoration: underline;
+    color: brown;
+  }
+  
+   a:hover {
+    background-color: yellow;
+  }
+  
+  a:link {
+    color: brown;
+  }
+  
+  a:visited {
+    color: green;
+  }
+  

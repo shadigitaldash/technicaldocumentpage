@@ -1,0 +1,98 @@
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Spectral:ital,wght@1,500&display=swap" rel="stylesheet">
+  </head>
+  <nav id="navbar">
+    <header>HTML for Beginners</header>
+    <ul>
+      <li><a class="nav-link" href="#introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#what_is_html">What is HTML</a></li>
+      <li><a class="nav-link" href="#what_is_html_used_for">What is HTML Used For</a></li>
+      <li><a class="nav-link" href="#how_to_write_html">How to Write HTML</a></li>
+      <li><a class="nav-link" href="#html_tags">HTML Tags</a></li>
+      <li><a class="nav-link" href="#html_attributes">HTML Attributes</a></li>
+      <li><a class="nav-link" href="#common_html_elements">Common HTML Elements</a></li>
+    </ul>
+    </nav>
+  <main id="main-doc"> 
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+      <p>HTML is the foundation of most web pages — it’s how we tell browsers to structure content into titles, headings, paragraphs, images, links, lists, forms, tables, and more.</p>
+    </section>
+    <section class="main-section" id="what_is_html"> 
+      <header>What is HTML</header>
+      <p>HTML, short for Hypertext Markup Language, is the core language of the World Wide Web. Originally designed as a language for semantically describing scientific documents, it has adapted to describe the basic structure of web pages and online applications. For example, HTML can be used to specify which part of the document is a title, which is a list, and which is an image. It can also be used to hyperlink a word, embed an image, italicize font, and more. Let's break this down word-by-word to understand what HTML actually means.</p>
+      <ul> 
+        <li>“Hypertext” is text that contains references to other text or pages, also known as hyperlinks. Hyperlinks allow you to go anywhere on the web with a click of the mouse. For example, here is a <a href="https://www.freecodecamp.org/">hyperlink that sends you to FreeCodeCamp to practice your HTML</a>.</li>
+        <li>Linking information together in this way revolutionized the web. Together, HTML and the internet make it possible for anyone to access all types of information around the world, in any order they want.
+  </li>
+        <li>“Markup” refers to how HTML “marks up” the page with annotations within the HTML file. These annotations are not displayed on the web page itself — they work behind-the scenes telling browsers how to display the document to visitors. </li>
+        <li>“Language” is the simplest part of the acronym to understand. Like any language, HTML is made up of a unique syntax and alphabet.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="what_is_html_used_for"> 
+      <header>What is HTML Used For</header>
+      <p>HTML is primarily used for creating web pages. Because it’s open-source and supported by all modern browsers, HTML is free to use and ensures your text, images, and other elements are displayed intended. </p>
+      <p>With HTML, not only can you format documents with headings, paragraphs, lists, and other elements — you can also embed images, videos, audio files, and other multimedia via hyperlinks. And, you can link to other web pages on the same website or from another site. This allows visitors to easily navigate your website and jump between websites stored on different web servers.</p>
+      <p>Even after adding headings, images, and hyperlinks, you’d still have a very basic web page — and that’s by design. HTML is supposed to create a simple base upon which Cascading Style Sheets (CSS) and JavaScript (JS) can be added. With CSS, you can customize your styling and layouts, changing the color, font, and alignment of elements. With and JS, you can add dynamic functionality like pop-ups and photo sliders.</p>
+      <p>HTML is used to create things other than web pages, too. You can use it to:</p>
+      <ul>
+        <li>make tables for organizing data</li>
+        <li>create forms for collecting user information, processing transactions, making reservations, or placing an order</li>
+        <li>create emails with HTML</li>
+      </ul>
+    </section>
+    <section class="main-section" id="how_to_write_html"> 
+      <header>How to Write HTML</header>
+      <p>HTML elements are designated by tags. Most elements have an opening and closing tag. Opening tags precede the text and contain the element name enclosed by the brackets “<” and “>”. Closing tags are identical to opening tags, save for a backward slash that precedes the element name.</p>
+      <p>Say you want to add a paragraph to your web page, and the text of the paragraph is “This is a paragraph.” You’ll wrap it with the HTML paragraph tags: "< p>" and "< /p>"". So, the HTML will look like this:</p>
+    <code>< p >This is a paragraph.< /p ></code>
+      <p>Together, these three things are all you need make a paragraph element in HTML. Most HTML elements are the same: an opening tag, a closing tag, and content in between. Some HTML elements, such as <br> (break), only have an opening tag — these are called empty tags</p>
+    </section>
+    <section class="main-section" id="html_tags"> 
+      <header>HTML Tags</header>
+      <p>HTML tags are like keywords which defines that how web browser will format and display the content. With the help of tags, a web browser can distinguish between an HTML content and a simple content.</p>
+      <p>When a web browser reads an HTML document, browser reads it from top to bottom and left to right. HTML tags are used to create HTML documents and render their properties. Each HTML tags have different properties.</p>
+      <p>A self-closing tag is made of an element’s symbol wrapped in angle brackets. It does not require a forward slash.</p>
+      <p>Below is a list of some common self closing HTML tags and a quick description of what the tag is used for:</p>
+      <ul>
+        <li>
+          <code>< link ></code>
+          <p>Link tags are mostly used to add external hyperlinks to the HTML document.</p>
+        </li>
+        <li>
+          <code> < meta ></code>
+          <p>Meta is used to give metadata to the webpage</p>
+        </li>
+        <li>
+          <code> < br ></code>
+          <p>Br is used to create a line break</p>
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="html_attributes"> 
+      <header>HTML Attributes</header>
+      <p>Attributes modify HTML elements in different ways. They can change the appearance of the element, apply unique identifiers so the elements can be targeted by CSS, or provide necessary information to readers or screen readers.</p>
+      <p>Attributes usually appear lowercase and as name/value pairs, with their values in quotes.</p>
+      <p>Below is are some examples of a few common HTML Attributes:</p>
+      <code>< button class="btn"  >Button< /button ></code>
+      <p>The class attribute is used to identify a group of elements under the same name and customize that group, effectively creating a new group of elements.</p>
+       <code>< a href="https://www.hubspot.com" >go to HubSpot.com</ a ></code>
+       <p>An href attribute contains the destination of a link. This attribute must always be included with an anchor element.</p>
+     <code>< img src=" " alt="alt text" ></code>
+      <p>The alt attribute provides descriptive information about the HTML element. This is important for readers with visual impairments and for all readers in case the element doesn’t load. In that case, readers will still be able to glean what the element was meant to convey.</p>
+      
+    </section>
+    <section class="main-section" id="common_html_elements"> 
+      <header>Common HTML Elements</header>
+      <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+      <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+      <p>Examples of some HTML elements:</p>
+      <ul>
+        <li><code> < h1 >My First Heading.< /h1 ></code>
+        </li>
+        <li><code>< p >My first paragraph.< /p ></code></li>
+      </ul>
+      
+      </section> 
+  </main>
